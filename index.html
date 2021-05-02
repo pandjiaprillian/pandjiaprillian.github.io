@@ -146,17 +146,18 @@
                 <h2 class="mb-5">Projects</h2>
                 <div class="card mb-3">
                     <a href="http://sisfokoom.herokuapp.com/" target="_blank">
-                        <img src="assets/img/ss-project.png" class="card-img-top" alt="sisfokoom">
+                        <img src="assets/img/sisfokoom.png" class="card-img-top" alt="sisfokoom">
                     </a>
                     <div class="card-body">
                         <a href="http://sisfokoom.herokuapp.com/" target="_blank">
-                            <h5 class="card-title">Sisfokoom</h5>
+                            <h3 class="card-title">Sisfokoom</h3>
                         </a>
                         <p class="card-text">
                             Ini adalah web Sistem Universitas menggunakan Laravel versi 8. Ini adalah studi kasus akhir
                             dari
                             ebook <a
-                                href="https://www.duniailkom.com/laravel-in-depth-1-panduan-belajar-laravel-lanjutan/" target="_blank">Laravel
+                                href="https://www.duniailkom.com/laravel-in-depth-1-panduan-belajar-laravel-lanjutan/"
+                                target="_blank">Laravel
                                 In Depth #1</a>. Dalam web ini terdapat 4 ( <i>5 jika dengan pivot tabel</i> ) tabel
                             yang saling berelasi, di antaranya yaitu tabel Jurusan, tabel Dosen, tabel Mahasiswa, dan
                             tabel Matakuliah. Seluruh kode dalam web ini tetap milik dari selaku yang mempunyai ebook,
@@ -165,7 +166,8 @@
                         <p class="card-text">
                             Web ini ada di dalam web portfolio saya adalah sebagai bahan bukti kepada diri saya sendiri
                             bahwa sudah menyelesaikan ebook <a
-                                href="https://www.duniailkom.com/laravel-in-depth-1-panduan-belajar-laravel-lanjutan/" target="_blank">Laravel
+                                href="https://www.duniailkom.com/laravel-in-depth-1-panduan-belajar-laravel-lanjutan/"
+                                target="_blank">Laravel
                                 In Depth #1</a>.
                         </p>
                         <ul>
@@ -176,6 +178,44 @@
                                 <p class="card-text"><small class="text-muted">password : adminrahasia</small></p>
                             </li>
                         </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <a href="http://pasperdok.xyz/" target="_blank">
+                        <img src="assets/img/pasperdok.png" class="card-img-top" alt="sisfokoom">
+                    </a>
+                    <div class="card-body">
+                        <a href="http://pasperdok.xyz/" target="_blank">
+                            <h3 class="card-title">PasPerDok (Pasien Perawat dan Dokter)</h3>
+                        </a>
+                        <p class="card-text">
+                            Web ini adalah adalah web sederhana dengan 4 role, yaitu pasien, perawat, dokter dan admin.
+                            Dengan tabel yang saling berelasi, dan untuk mengatur rolenya menggunakan package laravel
+                            permission
+                            dari <a href="https://spatie.be/docs/laravel-permission/v4/introduction"
+                                target="_blank">spatie.be.</a>
+                        </p>
+                        <p class="card-text">
+                        <h5>Fitur dari web ini adalah : </h5>
+                        <ul>
+                            <li>Pasien bisa memilih penyakit yang di derita dan juga menuliskan keluhan yang di alami
+                                oleh pasien.</li>
+                            <li>Perawat bisa melihat pasien pasien dimana tempat ruangan perawat tersebut bekerja</li>
+                            <li>Dokter bisa melihat siapa saja pasien yang terdaftar ke dokter yang bersangkutan, karena
+                                ketika pasien memilih penyakit akan terhubung ke dokter spesialis yang memang di bidang
+                                penyakit tersebut. Lalu dokter juga bisa memutuskan apakah si pasien tersebut harus di
+                                rawat inap atau tidak, jika di rawat inap, maka dokter bisa memilih kamar untuk
+                                ditempati oleh pasien. (Jumlah maksimal pasien untuk 1 kamar hanya 2 orang).</li>
+                            <li>Admin bisa melihat dan melakukan CRUD terhadap semua data, dari data pasien, perawat,
+                                dokter, penyakit, ruangan, dan data admin itu sendiri, tetapi untuk edit dan delete
+                                admin hanya bisa dilakukan oleh admin yang login saja. Dalam artian, admin lain tidak
+                                bisa menghapus atau mengedit data admin lain, hanya dirinya sendiri.</li>
+                        </ul>
+                        <a href="https://github.com/PandjiAprillian/pasperdok">
+                            <i class="fab fa-github"></i>
+                            Pasperdok
+                        </a>
                     </div>
                 </div>
             </div>
