@@ -1,0 +1,45 @@
+@media screen and(max-width: 1200px) {
+    #hero h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* #hero .dl-cv {
+        margin: auto;
+    } */
+
+    #hero .social-groups {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #hero .social-groups .cv, 
+    .cv-group {
+        font-size: .9rem;
+    }
+    
+    #hero .btn-custom-1 {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #hero .hallo-text {
+        padding-top: 40px;
+    }
+
+    #hero .btn-custom-1 {
+        width: 80%;
+    }
+
+    #about .biograft {
+        text-align: justify !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #certificate .card {
+        margin-top: 20px;
+    }
+}

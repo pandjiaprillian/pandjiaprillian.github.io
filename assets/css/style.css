@@ -1,0 +1,137 @@
+:root {
+    --mainColor: #011527;
+    --secondaryColor: #333646;
+    --accentColor: #FF9100;
+}
+
+body {
+    background-color: var(--mainColor);
+    min-height: 100px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.color-accent {
+    color: var(--accentColor);
+}
+
+/* navbar */
+.nav-link.active {
+    color: var(--accentColor) !important;
+    font-weight: 700;
+}
+
+.nav-dark {
+    background-color: var(--secondaryColor) !important;
+    z-index: 999;
+    transition: .5s;
+}
+/* end navbar */
+
+/* hero section */
+
+#hero {
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero h2 {
+    font-weight: 300;
+}
+
+/* CTA */
+.btn-custom-1 {
+    background-color: var(--accentColor);
+    text-align: center;
+    color: #fff;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#hero .btn-custom-1:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, .8);
+}
+
+#hero .cv {
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+#hero .cv-text:hover {
+    color: #c2740f;
+}
+
+.social-icons svg {
+    margin-right: .7em;
+    margin-bottom: 10px;
+}
+/* end CTA */
+
+/* end hero section */
+
+/* about */
+hr {
+    width: 35%;
+    height: 5px;
+    color: var(--accentColor);
+    margin: 0 auto;
+    text-align: center;
+    opacity: 100%;
+}
+
+#about {
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+/* end about */
+
+/* skill */
+#skill {
+    min-height: 300px;
+    width: 100%;
+    color: #fff;
+}
+
+#skill img {
+    width: 12%;
+    margin: 10px;
+}
+/* end skill */
+
+/* certificate */
+#certificate {
+    padding: 100px 0;
+    background-color: var(--secondaryColor);
+}
+/* end certificate */
+
+/* projects */
+#projects {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.modal-link:hover {
+    color: var(--accentColor);
+    font-weight: bold;
+}
+/* end projects */
+
+/* contact */
+#contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--secondaryColor);
+}
+/* end contact */
