@@ -23,6 +23,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>Pandji Aprillian</title>
 </head>
 
@@ -41,10 +44,10 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link active me-3" aria-current="page" href="#hero">HOME</a>
+                                <a class="nav-link me-3" aria-current="page" href="#hero">HOME</a>
                                 <a class="nav-link me-3" href="#about">ABOUT</a>
-                                <a class="nav-link me-3" href="#projects">PROJECTS</a>
                                 <a class="nav-link me-3" href="#certificate">CERTIFICATE</a>
+                                <a class="nav-link me-3" href="#projects">PROJECTS</a>
                                 <a class="nav-link me-3" href="#contact">CONTACT</a>
                             </div>
                         </div>
@@ -60,16 +63,19 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-lg-5 offset-lg-1 col-md-6 my-auto order-1 text-center text-md-start hallo-text">
-                    <h3>Hallo,</h3>
-                    <h2 class="fw-bold">I Am Pandji Aprillian</h2>
-                    <p>Junior Web Developer</p>
-                    <button class="btn btn-custom-1 my-1">Let's Disquss <svg xmlns="http://www.w3.org/2000/svg"
-                            width="32.168" height="23.276" viewBox="0 0 32.168 23.276">
-                            <path id="right-arrow"
-                                d="M20.506,23.775a3.248,3.248,0,0,1-1.217-.237,3.058,3.058,0,0,1-1.948-2.83V18.072a1.257,1.257,0,0,1,2.513,0v2.636a.6.6,0,0,0,.4.566.636.636,0,0,0,.7-.131l8.335-8.137a1.21,1.21,0,0,0,0-1.738L20.953,3.132A.636.636,0,0,0,20.25,3a.6.6,0,0,0-.4.566v7.406a2.485,2.485,0,0,1-2.513,2.451H1.257a1.226,1.226,0,1,1,0-2.451H17.341V3.567A3.058,3.058,0,0,1,19.289.737a3.206,3.206,0,0,1,3.442.663l8.335,8.137a3.621,3.621,0,0,1,0,5.2l-8.335,8.137a3.181,3.181,0,0,1-2.224.9Zm0,0"
-                                transform="translate(0 -0.5)" fill="#fff" />
-                        </svg>
-                    </button>
+                    <div class="introduce-text">
+                        <h3 class="hallo-h3"></h3>
+                        <h2 class="fw-bold pandjiaprillian"></h2>
+                        <p class="junior-wd"></p>
+                        <a href="#contact" class="btn btn-custom-1 my-1 disquss">Let's Disquss <svg
+                                xmlns="http://www.w3.org/2000/svg" width="32.168" height="23.276"
+                                viewBox="0 0 32.168 23.276">
+                                <path id="right-arrow"
+                                    d="M20.506,23.775a3.248,3.248,0,0,1-1.217-.237,3.058,3.058,0,0,1-1.948-2.83V18.072a1.257,1.257,0,0,1,2.513,0v2.636a.6.6,0,0,0,.4.566.636.636,0,0,0,.7-.131l8.335-8.137a1.21,1.21,0,0,0,0-1.738L20.953,3.132A.636.636,0,0,0,20.25,3a.6.6,0,0,0-.4.566v7.406a2.485,2.485,0,0,1-2.513,2.451H1.257a1.226,1.226,0,1,1,0-2.451H17.341V3.567A3.058,3.058,0,0,1,19.289.737a3.206,3.206,0,0,1,3.442.663l8.335,8.137a3.621,3.621,0,0,1,0,5.2l-8.335,8.137a3.181,3.181,0,0,1-2.224.9Zm0,0"
+                                    transform="translate(0 -0.5)" fill="#fff" />
+                            </svg>
+                        </a>
+                    </div>
 
                     <div class="position-absolute bottom-0 social-groups">
                         <div class="social-icons">
@@ -103,7 +109,8 @@
                             <!-- end instagram -->
                         </div>
                         <div class="fw-bold cv-group">
-                            <a href="#" class="text-decoration-none text-white cv">
+                            <a href="https://drive.google.com/u/0/uc?id=1gUoHDa8HpoS6aCNAVt5V7o1gi1dAm45J&export=download"
+                                download class="text-decoration-none text-white cv">
                                 <span class="color-accent cv-text">Download</span>
                             </a>
                             Curriculum Vitae
@@ -113,7 +120,7 @@
 
                 <div class="col-lg-5 col-md-6 order-md-2">
                     <img src="assets/images/picture-pic.png"
-                        class="float-lg-end mx-auto d-block img-fluid shadow-sm rounded-circle w-75">
+                        class="float-lg-end mx-auto d-block img-fluid shadow-sm rounded-circle w-75 picture-pic">
                 </div>
             </div>
         </div>
@@ -125,20 +132,23 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-10 text-center">
+                    <div class="col-10 text-center" data-aos="zoom-in" data-aos-duration="2000">
                         <h1 class="text-white fw-bold">About</h1>
                         <hr>
                     </div>
                     <div class="col-lg-10 col-md-12">
-                        <p class="text-center color-accent mt-3">
+                        <p class="text-center color-accent mt-3" data-aos="fade-down" data-aos-duration="2000">
                             " Membaca, mencoba, dan berdo'a adalah cara terbaik untuk mendapatkan sesuatu. "
                         </p>
-                        <p class="text-center biograft">
-                            Saya merupakan lulusan SMK dengan jurusan Rekayasa Perangkat Lunak. Saya mampu bekerja
-                            secara individu ataupun berkolaborasi dengan tim, bekerja sesuai aturan, up to date dengan
-                            perkembangan teknologi dan informasi. Saya dapat menggunakan beberapa skil sesuai dengan
-                            bidang saya, seperti Bahasa markup HTML dan CSS, PHP programming languange dan framework
-                            Laravel.
+                        <p class="text-center biograft" data-aos="fade-up" data-aos-duration="2000">
+                            Saya merupakan lulusan SMK PASIM Sukabumi dengan jurusan Rekayasa Perangkat Lunak. Saya mampu bekerja
+                            secara individu ataupun berkolaborasi dengan tim, bekerja sesuai aturan, <strong><i>up to date</i></strong> dengan
+                            perkembangan teknologi dan informasi.
+                        </p>
+                        <p class="text-center biograft" data-aos="fade-up" data-aos-duration="2000">
+                            Saya dapat menggunakan beberapa skil sesuai dengan
+                            bidang saya, seperti Bahasa markup <strong>HTML</strong> dan <strong>CSS</strong>, <strong>PHP</strong> <strong><i>programming languange</i></strong> dan framework
+                            <strong>Laravel</strong>.
                         </p>
                     </div>
                 </div>
@@ -152,17 +162,21 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-10">
+                    <div class="col-10" data-aos="zoom-in" data-aos-duration="2000">
                         <h1 class="fw-bold text-center text-white">Skill</h1>
                         <hr>
                     </div>
 
                     <div class="col-lg-10 col-md-12 text-center mt-3">
-                        <img src="assets/images/skills/html.png" class="me-3">
-                        <img src="assets/images/skills/css.png" class="me-3">
-                        <img src="assets/images/skills/bootstrap.png" class="me-3">
-                        <img src="assets/images/skills/php.png" class="me-3">
-                        <img src="assets/images/skills/laravel.png">
+                        <img src="assets/images/skills/html.png" class="me-3" data-aos="fade-right"
+                            data-aos-duration="2000">
+                        <img src="assets/images/skills/css.png" class="me-3" data-aos="fade-right"
+                            data-aos-duration="1500">
+                        <img src="assets/images/skills/bootstrap.png" class="me-3" data-aos="fade-up"
+                            data-aos-duration="2000">
+                        <img src="assets/images/skills/php.png" class="me-3" data-aos="fade-left"
+                            data-aos-duration="1500">
+                        <img src="assets/images/skills/laravel.png" data-aos="fade-left" data-aos-duration="2000">
                     </div>
                 </div>
             </div>
@@ -175,28 +189,31 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" data-aos="zoom-in" data-aos-duration="2000">
                         <h1 class="fw-bold text-white text-center">Certificate</h1>
                         <hr>
                     </div>
                 </div>
 
                 <div class="row justify-content-center mt-4">
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-4 text-center" data-aos="fade-up" data-aos-placement="top-center"
+                        data-aos-duration="1300">
                         <div class="card mt-3">
                             <div class="card-body">
                                 <img src="assets/images/certificate/certificate-1.png" class="img-fluid">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mt-3">
+                    <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-placement="top-center"
+                        data-aos-duration="1300">
                         <div class="card">
                             <div class="card-body">
                                 <img src="assets/images/certificate/certificate-2.png" class="img-fluid">
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mt-3">
+                    <div class="col-md-4 mt-3" data-aos="fade-up" data-aos-placement="top-center"
+                        data-aos-duration="1300">
                         <div class="card">
                             <div class="card-body">
                                 <img src="assets/images/certificate/certificate-3.png" class="img-fluid">
@@ -213,14 +230,14 @@
     <section id="projects">
         <div class="container">
             <div class="row justify-content-center mb-5">
-                <div class="col-12">
+                <div class="col-12" data-aos="zoom-in" data-aos-duration="2000">
                     <h1 class="fw-bold text-white text-center">Projects</h1>
                     <hr>
                 </div>
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-lg-10 col-md-12">
+                <div class="col-lg-10 col-md-12" data-aos="zoom-in-up" data-aos-duration="1300">
                     <div class="card">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -425,7 +442,7 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-10 text-center">
+                    <div class="col-10 text-center" data-aos="zoom-in" data-aos-duration="2000">
                         <h1 class="text-white fw-bold">Contact Me</h1>
                         <hr>
                     </div>
@@ -434,7 +451,7 @@
                             Pesan anda berhasil dikirim!
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
-                        <form name="contact-form">
+                        <form name="contact-form" data-aos="zoom-out" data-aos-duration="1300">
                             <div class="mb-3">
                                 <label for="nama" class="form-label text-white">Nama Lengkap</label>
                                 <input type="text" class="form-control" name="nama" id="nama">
@@ -448,9 +465,9 @@
                                 <textarea class="form-control" name="pesan" id="pesan" rows="3"></textarea>
                             </div>
                             <div class="mt-3 text-end">
-                                <button type="submit"
-                                    class="btn btn-outline-warning btn-sm btn-kirim">Kirim!</button>
-                                <button class="btn btn-outline-warning btn-sm d-none btn-loading" type="button" disabled>
+                                <button type="submit" class="btn btn-outline-warning btn-sm btn-kirim">Kirim!</button>
+                                <button class="btn btn-outline-warning btn-sm d-none btn-loading" type="button"
+                                    disabled>
                                     <span class="spinner-border spinner-border-sm" role="status"
                                         aria-hidden="true"></span>
                                     Loading...
@@ -483,8 +500,16 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- GASP JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/TextPlugin.min.js"></script>
+
     <!-- My Script -->
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
